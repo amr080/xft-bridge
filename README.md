@@ -17,7 +17,7 @@
 - And we're just getting started
 
 
-
+***
 RAW:
 Seamlessly integrate stablecoins into your existing flow of funds through XFT’s Orchestration APIs. Bridge handles all of the regulatory, compliance and technical complexities. With XFT’s Issuance APIs, you can accept USD, EUR, USDC, USDT or any other stablecoin and settle funds in your own stablecoin. Reserves are invested in US Treasuries, earning >5%. Use our APIs to move funds across the globe in minutes, and offer USD and Euro accounts for consumers and businesses globally.
 
