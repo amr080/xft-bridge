@@ -1,0 +1,644 @@
+<!DOCTYPE html><!-- Last Published: Tue Aug 27 2024 14:09:42 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.bridge.xyz" data-wf-page="66c78bffc753432b33c4f619" data-wf-site="66c78bffc753432b33c4f61a" lang="en"><head><meta charset="utf-8"/><title>Bridge | Stablecoin API for developers</title><meta content="An entirely new payments platform, built with stablecoins, to simplify global money movement." name="description"/><meta content="Bridge | Stablecoin API for developers" property="og:title"/><meta content="An entirely new payments platform, built with stablecoins, to simplify global money movement." property="og:description"/><meta content="https://cdn.prod.website-files.com/66b5e40961664331645e962a/66bf9a88857aee784a70ff06_Bridge%20Link%20Image.avif" property="og:image"/><meta content="Bridge | Stablecoin API for developers" property="twitter:title"/><meta content="An entirely new payments platform, built with stablecoins, to simplify global money movement." property="twitter:description"/><meta content="https://cdn.prod.website-files.com/66b5e40961664331645e962a/66bf9a88857aee784a70ff06_Bridge%20Link%20Image.avif" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/css/bridgexyz-site.d4d5ff8a8.min.css" rel="stylesheet" type="text/css"/><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/66b5e40961664331645e962a/66be375d94fc2db5f415a17d_favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/66b5e40961664331645e962a/66be379d66e20db990e056ca_Frame.png" rel="apple-touch-icon"/><link href="https://bridge.xyz/" rel="canonical"/><!-- Keep this css code to improve the font quality-->
+<style>
+  * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+}
+</style>
+<!-- [Attributes by Finsweet] Form Submit Actions -->
+<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-formsubmit@1/formsubmit.js"></script>
+<!-- Apollo tracking -->
+<script async>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+o.onload=function(){window.trackingFunctions.onLoad({appId:"66b61997c383ea02d3d96cdf"})},
+document.head.appendChild(o)}initApollo();</script><!-- Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<!-- Solution Section -->
+<style>
+  .solution-grid[data-order="1"] {
+    position: static !important;
+  }
+</style>
+
+<script src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a%2F6544eda5f000985a163a8687%2F66ca5f1261f75b074dafd0fc%2Ffinsweetcomponentsconfig-1.0.1.js" type="module" async="" siteId="66c78bffc753432b33c4f61a" finsweet="components"></script></head><body><div class="page-wrapper"><div class="global-styles w-embed"><style>
+
+/* Set color style to inherit */
+.inherit-color * {
+    color: inherit;
+}
+
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+ 
+.margin-0 {
+  margin: 0rem !important;
+}
+  
+.padding-0 {
+  padding: 0rem !important;
+}
+
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+  
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+  
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+  
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+  
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+/* Apply "..." at 100% width */
+.truncate-width { 
+		width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; 
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Section Padding on various viewpoint */
+
+  @media only screen and (min-width: 992px) {
+    [class*="section"] {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    [class*="section"] {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    [class*="section"] {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+    }
+  }
+
+/* Hover Functionality on desktop only*/
+
+  @media only screen and (min-width: 992px) {
+    
+    .link-button:hover .link-button-underline{
+      width:100%;
+    }
+
+    .footer-link:hover .footer-link-underline{
+      width:100%;
+    }
+
+    .nav-link:hover .nav-link-underline{
+      width:100%;
+    }
+
+    .newsletter-form:hover .form-blue-line{
+      width:100%;
+    }
+
+  }
+
+
+/* Footer Link Underline */
+
+.footer-link.w--current .footer-link-underline{
+width:100%;
+pointer-events: none;
+}
+
+/* Nav Link Underline */
+
+.nav-link.w--current .nav-link-underline{
+width:100%;
+pointer-events: none;
+}
+
+
+
+</style></div><div class="page-css w-embed"><style>
+
+/* Swiper custom CSS */
+
+.swiper{
+overflow:visible;
+}
+
+@media only screen and (min-width: 992px) {
+    .swiper-wrapper{
+      display:grid !important;
+    }
+
+  }
+  
+/* Swiper Pagination Bullet Custom CSS */  
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 2px;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  background-color: hsla(0, 0.00%, 0.00%, 0.50);
+  transition-property: width;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+
+.swiper-pagination-bullet-active {
+  width: 3.75rem;
+  height: 2px;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  background-color: hsla(0, 0.00%, 0.00%, 1.00);
+  transition-property: width;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+
+</style></div><div data-w-id="b940add7-6081-55b3-3074-8af246a3ed27" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav"><div class="container-large"><div class="nav-component"><a href="/" aria-current="page" class="logo-link w-nav-brand w--current"><div class="logo-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 31 31" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
+<g clip-path="url(#clip0_164_3736)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 31C16.0483 31 16.59 30.9716 17.1236 30.916L16.6389 26.3119C16.2646 26.3508 15.8847 26.3708 15.5 26.3708C15.1171 26.3708 14.7389 26.351 14.3662 26.3124L13.8755 30.9159C14.4094 30.9715 14.9514 31 15.5 31ZM10.0533 24.9099C10.708 25.2897 11.4059 25.6031 12.138 25.841L10.7083 30.2452C9.66631 29.9068 8.67269 29.461 7.74054 28.9209L10.0533 24.9099ZM6.69763 21.8804C7.14499 22.4965 7.65545 23.0638 8.21953 23.5729L5.11817 27.0097C4.31496 26.2847 3.58801 25.4768 2.9508 24.5996L6.69763 21.8804ZM4.86041 17.7409C5.01854 18.4955 5.25492 19.2213 5.56066 19.9094L1.32916 21.7895C0.893875 20.8102 0.557122 19.7774 0.331485 18.7038L4.86041 17.7409ZM26.3708 15.4941C26.3676 9.49303 21.5018 4.6292 15.5 4.6292C9.4982 4.6292 4.6324 9.49303 4.6292 15.4941H0C0.000348878 14.5622 0.082931 13.6496 0.240884 12.763C1.09313 7.98868 4.13894 3.96415 8.29485 1.77291C10.4475 0.640708 12.8989 0 15.5 0C18.0843 0 20.5208 0.632437 22.6633 1.75098C27.5749 4.32152 30.9465 9.44851 30.9994 15.3531C30.9998 15.4001 31 15.4471 31 15.4941H26.3708ZM25.4403 19.9073C25.745 19.2212 25.9807 18.4976 26.1387 17.7454L30.6686 18.7034C30.4427 19.7789 30.1052 20.8133 29.6688 21.7941L25.4403 19.9073ZM22.782 23.5715C23.3468 23.0617 23.8578 22.4934 24.3055 21.8762L28.0503 24.5982C27.4123 25.4766 26.6844 26.2855 25.8801 27.0113L22.782 23.5715ZM18.8651 25.84C19.5964 25.6021 20.2936 25.2889 20.9475 24.9095L23.2603 28.9205C22.3298 29.4597 21.338 29.9049 20.298 30.2432L18.8651 25.84Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_164_3736">
+<rect width="30.9999" height="30.9999" fill="white"/>
+</clipPath>
+</defs>
+</svg></div></a><nav role="navigation" class="nav-menu w-nav-menu"><div class="nav-flex"><a href="/#secBenefit" class="nav-link w-inline-block"><div>Benefits</div><div class="nav-link-underline"></div></a><a href="/#secSolution" class="nav-link w-inline-block"><div>Solutions</div><div class="nav-link-underline"></div></a><div class="text-color-grey hide-tablet">|</div><div class="nav-menu-line"></div><a href="/company" class="nav-link w-inline-block"><div>Company</div><div class="nav-link-underline"></div></a><a href="#" class="nav-link hide w-inline-block"><div>Blog</div><div class="nav-link-underline"></div></a><div class="nav-mobile-button-wrapper"><a href="https://v39o5vq66gb.typeform.com/to/lhJWniQq" target="_blank" class="button hide w-inline-block"><p class="text-color-black">Request Free Demo</p><div class="button-arrow w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 11 11" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.11133 2.59773L1.51086 10.1987L0.803733 9.49165L8.4101 1.88474L2.14031 1.88474L2.14031 0.884741L9.61133 0.88474L10.1113 0.88474L10.1113 1.38474L10.1113 8.85629L9.11133 8.85629L9.11133 2.59773Z" fill="currentColor"/>
+</svg></div></a></div></div></nav><a href="https://v39o5vq66gb.typeform.com/to/lhJWniQq" target="_blank" class="button w-inline-block"><p class="text-color-black">Request Free Demo</p><div class="button-arrow w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 11 11" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.11133 2.59773L1.51086 10.1987L0.803733 9.49165L8.4101 1.88474L2.14031 1.88474L2.14031 0.884741L9.61133 0.88474L10.1113 0.88474L10.1113 1.38474L10.1113 8.85629L9.11133 8.85629L9.11133 2.59773Z" fill="currentColor"/>
+</svg></div></a><div class="menu-button w-nav-button"><div class="menu-flex"><div id="menu-text" class="typeface-mono text-size-small hide">Menu</div><div data-is-ix2-target="1" class="nav-lottie" data-w-id="7dbf6386-0587-3348-f769-2342f7de7e3c" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f672_nav%20menu%20lottie.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1" data-duration="0" data-ix2-initial-state="0"></div></div></div></div></div></div><main class="main-wrapper"><section class="section-home-hero"><div class="container-large"><div class="home-hero-component"><h1 class="hero-title">Make m<span class="typeface-bridge-diatype">o</span>ney move</h1><div class="home-hero-subtitle-wrap"><p class="typeface-mono text-size-small">An entirely new payments platform, built with stablecoins, to simplify global money movement.</p></div><a href="https://v39o5vq66gb.typeform.com/to/lhJWniQq" target="_blank" class="link-button w-inline-block"><div class="link-button-text-wrap"><div>Let&#x27;s Chat</div><div class="link-arrow w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 11 11" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1.51086 10.1987L9.11133 2.59773L9.11133 8.85629L10.1113 8.85629L10.1113 1.38474L10.1113 0.88474L9.61133 0.88474L2.14031 0.884741L2.14031 1.88474L8.4101 1.88474L0.803733 9.49165L1.51086 10.1987Z" fill="currentColor"/>
+</svg></div></div><div class="link-button-underline"></div></a></div></div><div class="hero-background"><div class="hero-gradient w-embed w-iframe"><div data-video-id="15114" style="width: 100%; height: 100%;overflow: hidden;">
+
+<iframe width="100%" height="100%" src="https://app.vidzflow.com/v/km65Iv6wHc?dq=1080&ap=true&muted=true&loop=true&ctp=false&bv=true&piv=false&playsinline=true&bc=%234E5FFD&controls=false" title="Bridge Header Loop" style="overflow: hidden;" frameborder="0" scrolling="no" allow="fullscreen"></iframe></div></div><div class="fade bottom"></div></div></section><section class="section-home-animation no-padding"><div class="container-large"><div data-w-id="12479656-5c21-551c-5c60-cb33058a7ad6" data-is-ix2-target="1" class="home-lottie is-mobile" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f695_Bridge_6_HeroMobile_0814.lottie" data-loop="1" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="9.66" data-duration="0"></div><div data-w-id="78e9bade-25df-6ad1-5e45-eb42fab6b121" data-is-ix2-target="1" class="home-lottie is-desktop" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6f4_Bridge%20Hero%20Animation%20Desktop.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="9.6" data-duration="0"></div></div></section><section id="secBenefit" class="section-benefit"><div class="container-large"><div id="w-node-_749682bc-a5dc-16c6-d872-9267acdf218b-33c4f619" class="benefit-component"><div id="w-node-e25f0523-d9d7-6eae-7f38-9e74d66332da-33c4f619" class="title-wrapper"><div class="title-square"></div><div class="text-size-title">Benefits</div></div><div class="card-wrapper"><div class="swiper"><div class="swiper-wrapper"><div id="w-node-_25a48cdb-3d8b-31e1-a23d-1e1feae173ed-33c4f619" class="swiper-slide"><div id="w-node-_965d67fe-6bce-ce8e-70c8-866a5bc1d5d5-33c4f619" class="benefit-card"><h3>Move, store and a<span class="typeface-bridge-diatype">c</span>cept stabl<span class="typeface-bridge-diatype">e</span>coins with a few lines of c<span class="typeface-bridge-diatype">o</span>de</h3><div class="benefit-card-lottie-container"><div class="div-block-2"><div data-is-ix2-target="1" class="benefit-card-lottie" data-w-id="a10358a3-d614-fa1f-99fb-fb9c86879982" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f69b_Bridge_Benefits_0814.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="5" data-duration="0" data-ix2-initial-state="0"></div></div></div><div class="benefit-card-bottom-wrap"><p class="text-color-grey text-size-small">Seamlessly integrate stablecoins into your existing flow of funds through Bridge’s Orchestration APIs. Bridge handles all of the regulatory, compliance and technical complexities.</p></div><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f659_topbar.svg" loading="lazy" alt="" class="topbar"/></div></div><div id="w-node-_45aad04e-0543-096e-b29f-49d713571048-33c4f619" class="swiper-slide"><div id="w-node-f42309b7-1ecf-2cf9-1b99-e9bbce14abfc-33c4f619" class="benefit-card"><h3>Issue your <span class="typeface-bridge-diatype">o</span>wn <span class="typeface-bridge-diatype">s</span>tablecoin in minutes</h3><div class="benefit-card-lottie-container"><div data-is-ix2-target="1" class="benefit-card-lottie" data-w-id="35e9e5fe-5ce4-8d5a-6c8c-13357ae34033" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6f1_Bridge%20Issue%200819.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="5" data-duration="0" data-ix2-initial-state="0"></div></div><div class="benefit-card-bottom-wrap"><p class="text-color-grey text-size-small">With Bridge’s Issuance APIs, you can accept USD, EUR, USDC, USDT or any other stablecoin and settle funds in your own stablecoin. Reserves are invested in US Treasuries, earning &gt;5%.</p></div><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f659_topbar.svg" loading="lazy" alt="" class="topbar"/></div></div><div id="w-node-af937a9f-338e-9202-380f-ac58e7d424c0-33c4f619" class="swiper-slide"><div id="w-node-_852bd5d6-72ba-6d94-f058-21104f98fac3-33c4f619" class="benefit-card"><h3>Expand your c<span class="typeface-bridge-diatype">o</span>mpany&#x27;s<br/>‍<span class="typeface-bridge-diatype">g</span>lobal reach</h3><div class="benefit-card-lottie-container"><div data-is-ix2-target="1" class="benefit-card-lottie" data-w-id="b4bc731f-fc2b-eb97-457d-23f518e04115" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f69d_Bridge_Unlock_0814.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="5" data-duration="0" data-ix2-initial-state="0"></div></div><div class="benefit-card-bottom-wrap"><p class="text-color-grey text-size-small">Use our APIs to move funds across the globe in minutes, and offer USD and Euro accounts for consumers and businesses globally.</p></div><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f659_topbar.svg" loading="lazy" alt="" class="topbar"/></div></div></div></div><div class="pagination-wrap"></div></div></div></div><div class="benefit-background"><div class="fade"></div><div class="benefit-embed w-embed w-iframe"><div data-video-id="15115" style="width: 100%; height: 100%;overflow: hidden;">
+
+<iframe width="100%" height="100%" src="https://app.vidzflow.com/v/r8pc7njOpC?dq=576&ap=true&muted=true&loop=true&ctp=false&bv=true&piv=false&playsinline=true&bc=%234E5FFD&controls=false" title="Bridge Blur Motion" style="overflow: hidden;" frameborder="0" scrolling="no" allow="fullscreen"></iframe></div></div><div class="fade bottom"></div></div></section><section id="secSolution" class="section-solution"><div class="container-large"><div class="solution-component"><div id="w-node-e8837b97-9787-8c7b-88a0-b8ae214b6c92-33c4f619" class="title-wrapper is-solutions"><div class="title-square"></div><div class="text-size-title">Solutions</div></div><div class="solution-content"><div class="solution-container"><div class="solution-button-wrapper"><a href="#" class="solution-button active w-inline-block"><div class="typeface-mono text-size-title">1<br/></div></a><a href="#" class="solution-button w-inline-block"><div class="typeface-mono text-size-title">2</div></a><a href="#" class="solution-button w-inline-block"><div class="typeface-mono text-size-title">3</div></a><a href="#" class="solution-button w-inline-block"><div class="typeface-mono text-size-title">4</div></a></div><div data-order="1" class="solution-grid _1 active"><div class="solution-header-item"><h2 class="h2-solution">Move money at internet <span class="typeface-bridge-diatype">s</span>peed</h2><div class="solution-info-wrap"><p class="text-size-large">Integrate stablecoin payments in days. Move money between continents in minutes and for micro-cents.</p><div class="testimonial-block"><p class="typeface-mono text-size-meta">“We&#x27;re building a new stablecoin-based payment rail between LATAM and the US. Bridge has been instrumental in enabling us to scale over the last year.”</p><div class="testimonial-credit-wrap"><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6ce_Imran%20Ahmed.webp" loading="lazy" sizes="42px" srcset="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6ce_Imran%20Ahmed.webp 500w, https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6ce_Imran%20Ahmed.webp 800w" alt="Customer Headshot" class="testimonial-image"/><div class="testimonial-info-wrap"><div class="typeface-mono text-size-meta">Imran Ahmad</div><a href="https://bitso.com/" target="_blank" class="company-wrap w-inline-block"><div class="typeface-mono text-size-meta">Bitso</div></a></div></div></div></div></div><div id="w-node-_6ed4b66d-ba98-8307-d33b-81297e8a7893-33c4f619" class="lottie-wrapper"><div data-w-id="a233a6e3-160b-472c-1507-cfed0022d9b6" data-is-ix2-target="1" class="solution-lottie" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f697_Bridge_1A_0814.lottie" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="10" data-duration="0"></div></div></div><div class="solution-grid _2"><div class="solution-header-item"><h2 class="h2-solution"><span class="typeface-bridge-diatype">G</span>lobal treasury built for the most forward-thinking teams</h2><div class="solution-info-wrap"><p class="text-size-large">Move out of local currency and into stablecoins in minutes. Simplify and expedite your global treasury operations.</p><div class="testimonial-block"><p class="typeface-mono text-size-meta">Used by the SpaceX team</p><div class="testimonial-credit-wrap"><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f673_SpaceX_logo.svg" loading="lazy" alt="Company Logo" class="spacex-logo"/></div></div></div></div><div id="w-node-c4722180-f43a-ea44-064c-b06e2cffa2c2-33c4f619" class="lottie-wrapper"><div class="solution-lottie" data-w-id="c4722180-f43a-ea44-064c-b06e2cffa2c3" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f698_Bridge_2B_0814.lottie" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="20" data-duration="0"></div></div></div><div class="solution-grid _3"><div class="solution-header-item"><h2 class="h2-solution">Pay your employees with digital d<span class="typeface-bridge-diatype">o</span>llars, no matter where they work</h2><div class="solution-info-wrap"><p class="text-size-large">Send stablecoin payments to international recipients seamlessly. Give contractors, businesses, employees, and others economic choice.</p><div class="testimonial-block"><p class="typeface-mono text-size-meta">“Bridge has been a critical partner in enabling us to serve aid and gig platforms. Together we&#x27;ve built new payment infrastructure that enables real-time stablecoin-based payouts to thousands of end users.”</p><div class="testimonial-credit-wrap"><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6cf_Rubin.webp" loading="lazy" sizes="42px" srcset="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6cf_Rubin.webp 500w, https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6cf_Rubin.webp 800w" alt="Customer Headshot" class="testimonial-image"/><div class="testimonial-info-wrap"><div class="typeface-mono text-size-meta">Rubén Galindo Steckel</div><a href="https://airtm.com/" target="_blank" class="company-wrap w-inline-block"><div class="typeface-mono text-size-meta">AIRTM</div></a></div></div></div></div></div><div id="w-node-ad9ae805-4844-4557-dfba-cc382d69db1e-33c4f619" class="lottie-wrapper"><div class="solution-lottie" data-w-id="ad9ae805-4844-4557-dfba-cc382d69db1f" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f699_Bridge_3_PayEmployees_0814.lottie" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="13.42" data-duration="0"></div></div></div><div class="solution-grid _4"><div class="solution-header-item"><h2 class="h2-solution">Offer your customers a way to save and spend in US Dollars</h2><div class="solution-info-wrap"><p class="text-size-large">Enable your customers to save and spend in US Dollars and Euros. Spend locally with Bridge-issued cards or transfer via international and local payment rails.</p><div class="testimonial-block"><p class="typeface-mono text-size-meta">“We&#x27;re giving consumers and businesses across LATAM access to digital dollars, and Bridge has been a critical partner for us. We&#x27;re building new infrastructure with a new technology and they have been excellent partners, helping us scale through a variety of challenges.”</p><div class="testimonial-credit-wrap"><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f674_Zach%20Garman.webp" loading="lazy" alt="Customer Headshot" class="testimonial-image"/><div class="testimonial-info-wrap"><div class="typeface-mono text-size-meta">Zach Garman</div><a href="https://www.dolarapp.com/" target="_blank" class="company-wrap w-inline-block"><div class="typeface-mono text-size-meta">DolarApp</div></a></div></div></div></div></div><div id="w-node-_4d85940d-2d4a-b512-22e8-27233d134fb0-33c4f619" class="lottie-wrapper"><div class="solution-lottie" data-w-id="4d85940d-2d4a-b512-22e8-27233d134fb1" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6d4_Bridge_4B_SaveAndSpend_0816.lottie" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="9.02" data-duration="0"></div></div></div></div></div><div class="solution-skip-button"><div class="solution-skip-button_text">Next Solution</div><div class="solution-skip-button_icon w-embed"><svg width="100%" height="100%" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.57205 8.68118L2.86563 9.38759L2.86494 9.38829L8.14812 14.6715L8.50168 15.025L8.50237 15.0243L8.85523 14.6715L8.85592 14.6708L14.138 9.38866L14.1387 9.38797L13.4316 8.68086L13.4309 8.68155L8.99769 13.1148L8.99731 2.35773L7.99731 2.35776L7.99769 13.1054L3.57274 8.68049L3.57205 8.68118Z" fill="currentColor"/>
+</svg></div></div></div><div class="solution-sticky-ghost"><div class="solution-sticky-ghost_trigger"></div><div class="solution-sticky-ghost_trigger"></div><div class="solution-sticky-ghost_trigger"></div><div class="solution-sticky-ghost_trigger"></div></div></div></section><section class="section-contact"><div class="container-medium"><div class="contact-component"><div class="contact-content"><p class="heading-style-h3">We <span class="typeface-bridge-diatype">s</span>upport hundreds of teams building new global money mov<span class="typeface-bridge-diatype">e</span>ment experiences. <span class="text-color-grey">Chat with our team to see how Bridge </span><span class="typeface-bridge-diatype text-color-grey">c</span><span class="text-color-grey">an work for you.</span></p><a href="mailto:sales@bridge.xyz?subject=Website%20inquiry" class="link-button w-inline-block"><div class="link-button-text-wrap"><div class="link-button-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 12 12" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
+<path d="M0.509767 10.9087L10.5098 10.9087L10.5098 2.59497L0.509766 2.59497L0.509767 10.9087Z" stroke="currentColor"/>
+<path d="M10.1191 2.80371L5.46289 6.74121L0.900391 2.80371" stroke="currentColor"/>
+</svg></div><div>Contact Us</div><div class="link-arrow w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 11 11" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1.51086 10.1987L9.11133 2.59773L9.11133 8.85629L10.1113 8.85629L10.1113 1.38474L10.1113 0.88474L9.61133 0.88474L2.14031 0.884741L2.14031 1.88474L8.4101 1.88474L0.803733 9.49165L1.51086 10.1987Z" fill="currentColor"/>
+</svg></div></div><div class="link-button-underline"></div></a></div></div></div><div class="contact-bg"><div class="fade"></div><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6a4_contact%20gradient.webp" loading="lazy" sizes="100vw" srcset="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6a4_contact%2520gradient-p-500.png 500w, https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6a4_contact%2520gradient-p-800.png 800w, https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6a4_contact%2520gradient-p-1080.png 1080w, https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6a4_contact%2520gradient-p-1600.png 1600w, https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6a4_contact%2520gradient-p-2000.png 2000w, https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6a4_contact%20gradient.webp 2880w" alt="" class="contact-bg-gradient"/><div class="fade bottom"></div></div></section><section class="section-home-team"><div class="container-large"><div class="home-team-component"><div id="w-node-_63700dd7-15da-5222-50d3-3292cc6a3e30-33c4f619" class="home-team-header-wrap"><div><h2>Ba<span class="typeface-bridge-diatype">c</span>ked by the best. </h2><h2 class="text-color-grey">Building with the best.</h2></div><a href="/company" class="link-button w-inline-block"><div class="link-button-text-wrap"><div>Meet the Team</div><div class="link-arrow w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 11 11" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1.51086 10.1987L9.11133 2.59773L9.11133 8.85629L10.1113 8.85629L10.1113 1.38474L10.1113 0.88474L9.61133 0.88474L2.14031 0.884741L2.14031 1.88474L8.4101 1.88474L0.803733 9.49165L1.51086 10.1987Z" fill="currentColor"/>
+</svg></div></div><div class="link-button-underline"></div></a></div><div id="w-node-_42111051-5195-6c2c-b4b4-0a6a5bb36bb2-33c4f619" class="home-team-right"><div class="investor-logo-wrap"><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f65a_Sequoia%20Capital.svg" loading="lazy" alt="Sequoia Capital Logo" class="investor-logo is-sequoia"/><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f65f_Ribbit%20Capital.png" loading="lazy" alt="Ribbit Capital Logo" class="investor-logo is-ribbit"/><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f668_Index%20Ventures.png" loading="lazy" alt="Index Ventures Logo" class="investor-logo is-index-ventures"/><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f657_Haun.svg" loading="lazy" alt="Haun Logo" class="investor-logo is-haun"/><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f658_1Confirmation.svg" loading="lazy" alt="1 Confirmation Logo" class="investor-logo is-1confirmation"/><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f65d_Bedrock.svg" loading="lazy" alt="Bedrock Logo" class="investor-logo is-bedrock"/></div><div class="home-team-image-wrapper"><div class="home-team-image-column"><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6f0_Stocksy%20OriginalDelivery%201109521%201.avif" loading="lazy" alt="" class="solution-image is-1"/><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6ef_Stocksy%20OriginalDelivery%206026142%201.avif" loading="lazy" id="w-node-_62240243-a121-cb87-d6cc-fa2960a3d4b1-33c4f619" alt="" class="solution-image is-3"/></div><img src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/66c78bffc753432b33c4f6ee_Stocksy%20OriginalDelivery%201626400%201.avif" loading="lazy" alt="" class="solution-image is-2"/></div></div></div></div></section></main><div class="section-footer"><div class="container-large"><div class="footer-component"><div class="footer-link-wrapper"><a href="/" aria-current="page" class="footer-logo-link w-inline-block w--current"><div class="footer-logo w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 31 31" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.1236 30.916C16.59 30.9716 16.0483 31 15.5 31C14.9514 31 14.4094 30.9715 13.8755 30.9159L14.4435 25.5869C14.7904 25.6227 15.1424 25.6411 15.4987 25.6411C15.858 25.6411 16.2129 25.6224 16.5625 25.586L17.1236 30.916ZM23.2603 28.9205C22.3298 29.4597 21.338 29.9049 20.298 30.2432L18.6392 25.1455C19.3217 24.9235 19.9724 24.6311 20.5828 24.2768L23.2603 28.9205ZM28.0503 24.5982C27.4123 25.4766 26.6844 26.2855 25.8801 27.0113L22.2933 23.029C22.8203 22.5532 23.2972 22.0229 23.7149 21.4469L28.0503 24.5982ZM29.6688 21.7941L24.7736 19.6098C25.0576 18.9702 25.2774 18.2957 25.4247 17.5945L30.6686 18.7034C30.4427 19.7789 30.1052 20.8133 29.6688 21.7941ZM30.9994 15.3531C30.9465 9.44857 27.5749 4.32162 22.6635 1.75106C20.521 0.632466 18.0843 0 15.5 0C12.8989 0 10.4474 0.640722 8.29478 1.77295C4.13978 3.96373 1.09441 7.98701 0.241422 12.76C0.0831185 13.6475 0.000349274 14.5612 0 15.4941H5.35711C5.35711 9.90123 9.9071 5.35122 15.5 5.35122C21.0928 5.35122 25.6428 9.90123 25.6428 15.4941H31C31 15.4471 30.9998 15.4001 30.9994 15.3531ZM1.32916 21.7895C0.893875 20.8102 0.557122 19.7774 0.331485 18.7038L5.57172 17.5896C5.71939 18.2941 5.94013 18.9716 6.22566 19.614L1.32916 21.7895ZM5.11817 27.0097C4.31496 26.2847 3.58801 25.4768 2.9508 24.5996L7.28683 21.4528C7.70445 22.0278 8.18097 22.5571 8.70753 23.0321L5.11817 27.0097ZM10.7083 30.2452C9.66631 29.9068 8.67269 29.461 7.74054 28.9209L10.4174 24.2784C11.0285 24.6328 11.6799 24.9253 12.3632 25.1471L10.7083 30.2452Z" fill="currentColor"/>
+</svg></div></a></div><div class="footer-menu-wrapper"><div class="footer-left"><div class="footer-column"><a href="/" aria-current="page" class="footer-link w-inline-block w--current"><div>Home</div><div class="footer-link-underline"></div></a><a id="w-node-e6ebf840-c15b-cfed-eccf-c3f9084bfe32-084bfe27" href="/#secBenefit" class="footer-link w-inline-block"><div>Benefits</div><div class="footer-link-underline"></div></a><a id="w-node-e6ebf840-c15b-cfed-eccf-c3f9084bfe36-084bfe27" href="/#secSolution" class="footer-link w-inline-block"><div>Solutions</div><div class="footer-link-underline"></div></a><a id="w-node-e6ebf840-c15b-cfed-eccf-c3f9084bfe3a-084bfe27" href="/company" class="footer-link w-inline-block"><div>Company</div><div class="footer-link-underline"></div></a></div><div class="footer-column"><a id="w-node-e6ebf840-c15b-cfed-eccf-c3f9084bfe3f-084bfe27" href="https://www.linkedin.com/company/bridge-apis/" target="_blank" class="footer-link w-inline-block"><div>Linkedin</div><div class="footer-link-underline"></div></a><a id="w-node-e6ebf840-c15b-cfed-eccf-c3f9084bfe43-084bfe27" href="http://x.com/bridgeapis" target="_blank" class="footer-link w-inline-block"><div>X</div><div class="footer-link-underline"></div></a><a id="w-node-e6ebf840-c15b-cfed-eccf-c3f9084bfe47-084bfe27" href="#" class="footer-link hide w-inline-block"><div>Blog</div><div class="footer-link-underline"></div></a></div></div><div class="footer-right"><div class="footer-newsletter_title-wrapper"><h3>Sign up for our newsletter</h3></div><div class="footer-button_wrapper"><a href="https://v39o5vq66gb.typeform.com/to/iHnV77yu?typeform-source=www.bridge.xyz" target="_blank" class="button w-inline-block"><p class="text-color-black">Sign Up</p><div class="button-arrow w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 11 11" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.11133 2.59773L1.51086 10.1987L0.803733 9.49165L8.4101 1.88474L2.14031 1.88474L2.14031 0.884741L9.61133 0.88474L10.1113 0.88474L10.1113 1.38474L10.1113 8.85629L9.11133 8.85629L9.11133 2.59773Z" fill="currentColor"/>
+</svg></div></a></div></div></div></div><div class="footer-bottom"><div class="footer-bottom-left"><div class="text-size-title typeface-diatype-regular w-richtext"><p>Copyright © 2022-24 Bridge Ventures, Inc. All rights reserved.</p><p>‍</p><p>Services for Non-EEA residents are provided under terms of service with Bridge Ventures Inc. Money transmission services for applicable services provided to US residents are provided by Bridge Building Inc NMLS # 2450917. For US state licensing information, please see: <a href="https://www.nmlsconsumeraccess.org/" target="_blank" class="text-style-link text-color-dark-grey">www.nmlsconsumeraccess.org</a>.</p><p>‍</p><p>Services for EEA residents are provided under terms of service with Bridge Building Sp. Z.o.o., KRS: 0001039515, RDWW-794</p></div></div><div class="footer-bottom-right"><a href="/legal" class="text-size-title typeface-diatype-regular text-color-dark-grey">Legal</a><div class="text-size-title typeface-diatype-regular text-color-dark-grey">© Bridge <span id="current-year">2024</span></div></div></div></div><div class="footer-white-fade"></div><div class="footer-bg"><div class="footer-embed w-embed w-iframe"><div data-video-id="15114" style="width: 100%; height: 100%;overflow: hidden;">
+
+<iframe width="100%" height="100%" src="https://app.vidzflow.com/v/km65Iv6wHc?dq=1080&ap=true&muted=true&loop=true&ctp=false&bv=true&piv=false&playsinline=true&bc=%234E5FFD&controls=false" title="Bridge Header Loop" style="overflow: hidden;" frameborder="0" scrolling="no" allow="fullscreen"></iframe></div></div><div class="fade"></div></div></div><div fs-consent-element="internal-component" class="fs-consent_component"><div fs-consent-element="banner" class="fs-consent_banner"><div class="fs-consent_banner_wrapper"><p class="fs-consent_banner_paragraph">By clicking <strong fs-consent-element="internal-banner-text">&quot;Ok, got it&quot;</strong>, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. View our <a href="/legal#eea-privacy-policy">Privacy Policy</a> for more information.</p><div fs-consent-element="internal-buttons-wrapper" class="fs-consent_banner_buttons"><a fs-consent-element="allow" href="#" class="fs-consent_allow w-button">Ok, got it</a></div></div></div></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=66c78bffc753432b33c4f61a" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/js/bridgexyz-site.ce7b26223.js" type="text/javascript"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<script>
+
+//Update current year on footer
+
+ $('#current-year').text(new Date().getFullYear());
+
+//Newsletter Submit
+
+$('.newsletter-submit-button').on('click', function() {
+  $('.form-submit').click();
+});
+
+//-------------Newsletter Email Validation-----------//
+
+// Get the input element and the submit button
+const emailInput = document.querySelector('#newsletter-mail-input');
+const submitButton = document.querySelector('.newsletter-submit-button');
+
+// Function to validate email
+function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
+// Add an event listener for input changes
+if (emailInput) {
+  emailInput.addEventListener('input', function () {
+    if (validateEmail(this.value)) {
+      submitButton.classList.add('active');
+    } else {
+      submitButton.classList.remove('active');
+    }
+  });
+}
+  
+//----------------Navbar Animations on scroll---------------//
+
+// Get the navbar element
+const navbar = document.querySelector('.navbar');
+
+// Create a ScrollTrigger
+ScrollTrigger.create({
+  // Start the effect when the scroll position is 5% from the top
+  // Updated to fixed value 36px instead of 5% due bug on legal page (5% on legal page is too much scroll)
+  start: "36px top",
+  // Run this function every time the scroll position updates
+  onUpdate: (self) => {
+    // If we've scrolled past the start point, add the class
+    if (self.progress > 0) {
+      navbar.classList.add('scroll');
+    } else {
+      // Otherwise, remove the class
+      navbar.classList.remove('scroll');
+    }
+  }
+});
+
+//-----------------Navbar Animation on Mobile-------------------//
+
+
+const menuButton = document.querySelector('.menu-button');
+
+if (menuButton) {
+  menuButton.addEventListener('click', () => {
+    if (window.scrollY === 0) {
+      if (navbar.style.backgroundColor === 'white') {
+        navbar.style.backgroundColor = '';
+      } else {
+        navbar.style.backgroundColor = 'white';
+      }
+    }
+  });
+}
+
+// Reset background color when scrolling
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    navbar.style.backgroundColor = '';
+  }
+});
+
+//Update Menu Text
+function updateMenuText() {
+  const menuButton = document.querySelector('.menu-button');
+  const menuText = document.getElementById('menu-text');
+
+  if (menuButton.classList.contains('w--open')) {
+    menuText.textContent = 'Close';
+  } else {
+    menuText.textContent = 'Menu';
+  }
+}
+
+// Call the function initially to set the correct text
+updateMenuText();
+
+// Add click event listener with a 100ms delay
+document.querySelector('.menu-button').addEventListener('click', function () {
+  setTimeout(updateMenuText, 100);
+});
+
+
+
+</script><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<script>
+
+
+  //-----------------Swiper for Benefit Card on Touch Screen Devices----------//
+  var init = false;
+  var benefitSwiper;
+
+  function swiperCard() {
+    if (window.innerWidth <= 991) {
+      if (!init) {
+        init = true;
+        benefitSwiper = new Swiper(".swiper", {
+          direction: 'horizontal',
+          loop: false,
+          slidesPerGroup: 1,
+          slidesPerView: 1.1,
+          speed: 500,
+          spaceBetween: 20,
+          autoHeight: false,
+          breakpoints: {
+            // when window width is >= 360px
+            360: {
+              slidesPerView: 1.1
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 1.4
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 2
+            },
+            // when window width is >= 992px
+            992: {
+              slidesPerView: 3
+            }
+          },
+
+          // If we need pagination
+          pagination: {
+            el: '.pagination-wrap',
+          },
+        });
+      }
+    } else {
+      if (init) {
+        benefitSwiper.destroy();
+        init = false;
+      }
+    }
+  }
+
+  swiperCard();
+  window.addEventListener("resize", swiperCard);
+
+
+  //------------------Solution Section----------------------//
+
+  function setActiveSolution (index = 0, total = 4) {
+    // Remove active class from all buttons and grids
+    $('.solution-button').removeClass('active');
+    $('.solution-grid').removeClass('active');
+
+    // Add active class to clicked button
+    $('.solution-button').eq(index).addClass('active');
+
+    // Find the index of clicked button and add active class to corresponding grid
+    $('.solution-grid').eq(index).addClass('active');
+    $('.solution-grid').find('.solution-lottie').eq(index).click();
+
+    if (index === total - 1) {
+      $('.solution-skip-button').fadeOut(200);
+    } else {
+      $('.solution-skip-button').fadeIn(200);
+    }
+  }
+
+  function solutionSection () {
+    try {
+      if (window.gsap && window.ScrollTrigger) {
+        ScrollTrigger.config({ normalizeScroll: true });
+
+        const wrapper = document.querySelector(".solution-sticky-ghost");
+        const triggerList = wrapper.querySelectorAll(".solution-sticky-ghost_trigger");
+        const triggerLength = triggerList.length
+
+        triggerList.forEach((item, index) => {
+          ScrollTrigger.create({
+            trigger: item,
+            start: "top bottom",
+            end: "bottom bottom",
+            onEnter: (self) => {
+              setActiveSolution(index, triggerLength)
+            },
+            onEnterBack: (self) => {
+              setActiveSolution(index, triggerLength)
+            }
+          });
+        });
+      } else {
+        console.error('GSAP or ScrollTrigger failed to load.');
+      }
+    } catch (error) {
+      console.error(error);
+    }
+
+    $(document).on('click', '.solution-button', function () {
+      const index = $(this).index();
+      const trigger = $('.solution-sticky-ghost_trigger').eq(index)
+      if (!trigger.length) return;
+
+      const scrollTop = trigger.offset().top;
+      const height = trigger.outerHeight();
+
+      if (!scrollTop || !height) return;
+
+      window.scrollTo({
+        top: scrollTop - (height * 2) + 16,
+        behavior: "smooth",
+      });
+    })
+
+    $(document).on('click', '.solution-skip-button', function () {
+      const index = $(document).find('.solution-button.active').index() || 0;
+      const trigger = $('.solution-sticky-ghost_trigger').eq(index + 1)
+      if (!trigger.length) return;
+
+      const scrollTop = trigger.offset().top;
+      const height = trigger.outerHeight();
+
+      if (!scrollTop || !height) return;
+
+      window.scrollTo({
+        top: scrollTop - (height * 2) + 16,
+        behavior: "smooth",
+      });
+    })
+
+    $('.solution-grid').removeClass('_1 _2 _3 _4');
+
+    setActiveSolution(0);
+  }
+
+  solutionSection();
+
+  //-----------------Hero Section Lottie-------------------//
+
+  ScrollTrigger.create({
+    trigger: ".section-home-animation",
+    start: "top 50%",
+    onEnter: () => {
+      const homeLottieDesktop = document.querySelector('.home-lottie.is-desktop');
+      const homeLottieMobile = document.querySelector('.home-lottie.is-mobile');
+      if (homeLottieDesktop) {
+        homeLottieDesktop.click();
+      }
+      if (homeLottieMobile) {
+        homeLottieMobile.click();
+      }
+    },
+
+  });
+
+</script></body></html>
