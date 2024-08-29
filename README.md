@@ -202,5 +202,20 @@ JSON
   "updated_at": "2023-05-05T19:39:15.231Z"
 }
 If you would like to issue your own stablecoin, please reach out to sales@bridge.xyz.
+Partnering with Bridge: A Better Way to Move Money
+If you own a U.S.-based business serving primarily U.S.-based customers, you may not think much about stablecoins—yet. But in many parts of the world—in unstable economies, and where inflation is unchecked—moving money is more difficult, and the transformative power of this technology is already becoming clear. Where traditional payment rails are too difficult, slow, and expensive, some 30 million active users are now moving $3.2 trillion in stablecoins every month. And with industry giants including Stripe rolling out new payment options for these assets, those numbers are growing fast.
 
+But from cryptocurrencies to credit cards, each new medium for moving money requires new infrastructure to support it. At Sequoia, we’ve been fortunate to partner with leaders in fintech including PayPal, Block, Stripe, Nubank and Klarna, and we’ve been looking intently for the founders who will usher in the next wave of payment innovation.
+
+In Bridge co-founders Zach Abrams and Sean Yu, that’s exactly what we found.
+
+Zach, Sean and their team are making it possible for developers to seamlessly and instantly convert between any two dollar formats, with a single API. A company in Brazil can use Bridge to send USDC payments to their supplier in China, a consumer in Nigeria can pay for YouTube or ChatGPT, and a small business in the U.S. can take payments in PYUSD from customers around the world. Because Bridge is built on blockchains, it works 24/7, in virtually every country—and for as little as 10% of the cost of traditional foreign exchange rails.
+
+We loved the idea—and we loved the team. Zach and Sean are longtime co-founders, and longtime members of the Sequoia family, as well; their first company together, Evenly, was acquired by Block (then Square) in 2013. Zach went on to lead consumer products at Coinbase and Brex, while Sean became an early engineer and culture-bearer at DoorDash before joining Airbnb. As you might imagine, we had plenty of references on these two, and they described Zach and Sean as visionary, beloved and deeply knowledgeable on what it takes to move money at scale.
+
+In addition to their insight into the stablecoin landscape and their passion for the problem they’re solving, we are impressed by Bridge’s maturity around regulation. While many companies in their space have adversarial relationships with government, Bridge not only complies with all U.S. and European regulations but lists the U.S. State Department and U.S. Treasury among their customers!
+
+Since partnering, we’ve also been impressed by the sheer diversity of Bridge’s client list, which ranges from rocket companies to aid organizations to global fintechs. The applications of this platform seem to be endless—and the growth has been exponential, with payment volume crossing $5 billion annualized. 
+
+Yet even those rapid gains only scratch the surface of what we believe Zach, Sean and their team can accomplish, and we are grateful for the opportunity to partner with Bridge and lead their Series A. As adoption of stablecoins continues to grow, Bridge is building the foundation of this new core payment rail and making sure financial transactions will be faster, easier, more affordable and more accessible for people around the world.
 
